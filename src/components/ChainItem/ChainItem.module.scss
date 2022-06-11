@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.item {
+  max-width: 345px;
+  min-height: 358px;
+  width: 100%;
+  background-image: url(../../assets/icons/Subtract.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  fill: #f7f7f8;
+
+  span {
+    font-size: 28px;
+    line-height: 1.6;
+    color: $secondary-color;
+    font-weight: 700;
+  }
+
+  img {
+    margin-top: 7px;
+    width: 159px;
+    height: 159px;
+  }
+}

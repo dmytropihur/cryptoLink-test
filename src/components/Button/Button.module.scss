@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 262px;
+  align-items: center;
+  height: 68px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media (max-width: 700px) {
+    height: 52px;
+    font-size: 16px;
+  }
+}
+
+.more {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.started {
+  background-color: $secondary-color;
+}
+
+.apple,
+.play {
+  text-transform: capitalize;
+
+  .link_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link_top {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    @media (max-width: 700px) {
+      font-size: 12px;
+    }
+  }
+
+  .link_bottom {
+    line-height: 1.6;
+  }
+}
+
+.play {
+  .link_top {
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  line-height: 1.6;
+}

@@ -1,0 +1,163 @@
+@import "../../styles/variables.scss";
+
+.section {
+  padding-top: 220px;
+  position: relative;
+
+  @media (max-width: 1500px) {
+    padding-top: 160px;
+  }
+
+  @media (max-width: 1300px) {
+    padding-top: 130px;
+  }
+
+  @media (max-width: 1100px) {
+    padding-top: 115px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 75px;
+  }
+}
+
+.leftContainer {
+  max-width: 1750px;
+  margin: 0 auto 0 0;
+  padding: 0 20px 0 0;
+
+  @media (max-width: 1100px) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+
+  @media (max-width: 1500px) {
+    gap: 130px;
+  }
+
+  @media (max-width: 1300px) {
+    gap: 90px;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.imgWrapper {
+  flex-shrink: 1.5;
+
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.imgLeft {
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.imgRight {
+  display: none;
+
+  @media (max-width: 1100px) {
+    display: block;
+  }
+}
+
+.info {
+  align-self: flex-start;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px;
+
+  @media (max-width: 1500px) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: 1300px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 1100px) {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  @media (max-width: 1500px) {
+    font-size: 55px;
+  }
+
+  @media (max-width: 1500px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 1100px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  max-width: 680px;
+  margin-bottom: 80px;
+
+  @media (max-width: 1500px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.button {
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.adaptiveButtons {
+  display: none;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      max-width: 100%;
+      gap: 20px;
+    }
+  }
+}

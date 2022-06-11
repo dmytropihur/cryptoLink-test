@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .icon {
+    @media (max-width: 750px) {
+      width: 36px;
+      height: 40px;
+    }
+  }
+
+  .text {
+    @media (max-width: 750px) {
+      font-size: 14px;
+      gap: 12px;
+    }
+  }
+}
