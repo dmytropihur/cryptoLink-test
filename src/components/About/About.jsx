@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './About.module.scss';
 import leftPhone from '../../assets/images/leftAboutPhone.png';
 import rightPhone from '../../assets/images/rightAboutPhone.png';
-import { Button } from '../../components/Button';
+import { Link } from '../Link';
 
 export const About = () => {
   return (
@@ -31,11 +31,11 @@ export const About = () => {
               of DeFi.
             </p>
             <div className={styles.button}>
-              <Button type="started" />
+              <Link type="started" />
             </div>
             <div className={styles.adaptiveButtons}>
-              <Button type="play" />
-              <Button type="apple" />
+              <Link type="play" />
+              <Link type="apple" />
             </div>
           </div>
         </div>

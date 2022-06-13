@@ -7,14 +7,18 @@ import avalanche from '../../assets/images/avalanche.png';
 
 export const ChainItem = ({ text, type }) => {
   return (
-    <>
-      <div className={styles.item}>
-        {type === 'terra' && <img src={terra} alt="chain icon" />}
-        {type === 'solana' && <img src={solana} alt="chain icon" />}
-        {type === 'moon' && <img src={moon} alt="chain icon" />}
-        {type === 'avalanche' && <img src={avalanche} alt="chain icon" />}
-        <span>{text}</span>
-      </div>
-    </>
+    <div className={styles.item}>
+      {type === 'terra' && (
+        <img className={styles.img} src={terra} alt="terra" />
+      )}
+      {type === 'solana' && (
+        <img className={styles.img} src={solana} alt="solana" />
+      )}
+      {type === 'moon' && <img className={styles.img} src={moon} alt="moon" />}
+      {type === 'avalanche' && (
+        <img className={styles.img} src={avalanche} alt="avalanche" />
+      )}
+      <span className={styles.text}>{text}</span>
+    </div>
   );
 };

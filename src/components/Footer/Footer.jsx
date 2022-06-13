@@ -1,10 +1,8 @@
 import React from 'react';
+import { Link } from '../Link';
+import { SocialsList } from '../SocialsList/SocialsList';
+
 import styles from './Footer.module.scss';
-import { ReactComponent as InstaIcon } from '../../assets/icons/instagram.svg';
-import { ReactComponent as YoutubeIcon } from '../../assets/icons/youtube.svg';
-import { ReactComponent as TwitterIcon } from '../../assets/icons/twitter.svg';
-import { ReactComponent as MediumIcon } from '../../assets/icons/medium.svg';
-import { Button } from '../Button';
 
 export const Footer = () => {
   return (
@@ -16,28 +14,7 @@ export const Footer = () => {
             <a className={styles.email} href="mailto: Info@TheCryptoLink.com">
               Info@TheCryptoLink.com
             </a>
-            <ul className={styles.list}>
-              <li className={styles.item}>
-                <a className={styles.link} href="#">
-                  <InstaIcon />
-                </a>
-              </li>
-              <li className={styles.item}>
-                <a className={styles.link} href="#">
-                  <TwitterIcon />
-                </a>
-              </li>
-              <li className={styles.item}>
-                <a className={styles.link} href="#">
-                  <YoutubeIcon />
-                </a>
-              </li>
-              <li className={styles.item}>
-                <a className={styles.link} href="#">
-                  <MediumIcon />
-                </a>
-              </li>
-            </ul>
+            <SocialsList />
           </div>
         </div>
         <div className={styles.bottom}>
@@ -49,8 +26,8 @@ export const Footer = () => {
             <a href="#">Help</a>
           </div>
           <div className={styles.buttons}>
-            <Button type="play" />
-            <Button type="apple" />
+            <Link type="play" />
+            <Link type="apple" />
           </div>
         </div>
       </div>

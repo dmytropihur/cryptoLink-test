@@ -1,14 +1,13 @@
 import React from 'react';
-import styles from './Hero.module.scss';
-import { Button } from '../Button/Button';
-import { Header } from '../Header';
+import { Link } from '../Link';
 import phone from '../../assets/images/handPhone.png';
+
+import styles from './Hero.module.scss';
 
 export const Hero = () => {
   return (
     <section className={styles.section}>
       <div className="container">
-        <Header />
         <div className={styles.bottom}>
           <div className={styles.info}>
             <h1 className={styles.title}>The Passive Income App For All</h1>
@@ -17,8 +16,8 @@ export const Hero = () => {
               application.
             </p>
             <div className={styles.links}>
-              <Button type="more" />
-              <Button type="started" />
+              <Link type="more" />
+              <Link type="started" />
             </div>
           </div>
           <img className={styles.img} src={phone} alt="Phone" />

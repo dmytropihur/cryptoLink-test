@@ -21,7 +21,7 @@ export const Card = () => {
               </a>
             </div>
           </div>
-          <img className={styles.img} src={card} alt="#" />
+          <img className={styles.img} src={card} alt="Debit Card" />
         </div>
       </div>
     </section>

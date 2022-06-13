@@ -1,21 +1,19 @@
 import { Hero } from './components/Hero';
-import { App as AppComponent } from './components/App';
-
-import { Footer } from './components/Footer';
+import { Application } from './components/Application';
 import { About } from './components/About';
 import { MultiChain } from './components/MultiChain';
 import { Card } from './components/Card';
+import { Layout } from './layouts/Layout';
 
 function App() {
   return (
-    <>
+    <Layout>
       <Hero />
       <About />
       <MultiChain />
       <Card />
-      <AppComponent />
-      <Footer />
-    </>
+      <Application />
+    </Layout>
   );
 }
 

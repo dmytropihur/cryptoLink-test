@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './Slider.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
+import { ChainItem } from '../ChainItem';
+
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import { ChainItem } from '../ChainItem';
+import styles from './Slider.module.scss';
 
 export const Slider = () => {
   return (

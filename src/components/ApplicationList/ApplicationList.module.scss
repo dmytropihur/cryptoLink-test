@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  gap: 55px;
+  flex-direction: column;
+  flex: 0 1 680px;
+
+  @media (max-width: 900px) {
+    flex: 0 1 auto;
+  }
+}

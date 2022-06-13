@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.item {
+  max-width: 680px;
+  display: flex;
+  gap: 46px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 38px;
+  }
+}
+
+.itemInfo {
+  max-width: 521px;
+}
+
+.itemTitle {
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+
+.itemNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  color: $white-color;
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 28px;
+
+  @media (max-width: 1200px) {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 500px) {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+}
+
+.itemText {
+  max-width: 510px;
+  font-size: 18px;
+  line-height: 1.8;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+}
+
+.imgWrapper {
+  flex-shrink: 1.5;
+}
+
+.img {
+  object-fit: contain;
+}

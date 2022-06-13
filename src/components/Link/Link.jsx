@@ -5,7 +5,7 @@ import { ReactComponent as UpArrow } from '../../assets/icons/topArrow.svg';
 import { ReactComponent as PlayIcon } from '../../assets/icons/googlePlayIcon.svg';
 import { ReactComponent as AppleIcon } from '../../assets/icons/appleIcon.svg';
 
-export const Button = ({ type }) => {
+export const Link = ({ type }) => {
   return (
     <>
       {type === 'more' && (
